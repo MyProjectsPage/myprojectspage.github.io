@@ -635,8 +635,24 @@ playTypingAnimation(typingTexts[0]);
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
+
   <script src="js/main.js"></script>
-    
+ 
+  <script>
+    // This script automatically makes all external links open in a new tab for better user experience and security
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a[href^='http']");
+        const currentHost = location.host;
+
+        links.forEach(link => {
+            const linkHost = new URL(link.href).host;
+            if (linkHost !== currentHost) {
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+            }
+        });
+    });
+  </script>
+
   </body>
 </html>
