@@ -3475,7 +3475,8 @@ input[type="button"].btn-block {
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none; }
+    text-decoration: none; 
+  text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;}
 
 .navbar-nav {
   display: -webkit-box;
