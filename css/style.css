@@ -58,7 +58,7 @@ body {
   color: #e0e0e0; /* Light text for dark mode */
   text-align: left;
   background-color: #fff;
-background-image: url('../images/pattern.png');
+background-image: url('../images/pattern.jpg');
 background-repeat: repeat;
 background-size: 100px 100px; /* force bigger size to see */
 }
