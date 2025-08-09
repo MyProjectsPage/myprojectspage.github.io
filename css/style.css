@@ -9717,6 +9717,7 @@ textarea.form-control {
   }
 }
 
-.img {
+/* Only target the div with that background image */
+div[style*="chadee.png"] {
   animation: slideUpFromBottom 1s ease-out forwards;
 }
