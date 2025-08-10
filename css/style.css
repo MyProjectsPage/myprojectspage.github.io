@@ -9721,13 +9721,16 @@ textarea.form-control {
   0% {
     transform: translateY(100vh);
     opacity: 0;
+    filter: drop-shadow(0 0 0px #00f); /* no glow at start */
   }
   60% {
     transform: translateY(-10px);
     opacity: 1;
+    filter: drop-shadow(0 0 15px #00f); /* glow while moving */
   }
   100% {
     transform: translateY(0);
+    filter: none; /* glow removed at final position */
   }
 }
 
