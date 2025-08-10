@@ -9727,5 +9727,5 @@ textarea.form-control {
 
 /* Target only chadee.png background */
 div[style*="chadee.png"] {
-  animation: slideUpFromBottom 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  animation: slideUpFromBottom 3s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
