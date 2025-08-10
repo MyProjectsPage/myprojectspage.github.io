@@ -9738,3 +9738,10 @@ textarea.form-control {
 div[style*="chadee.png"] {
   animation: slideUpFromBottom 3s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
+
+
+.block-20.zoom-effect:hover {
+    filter: drop-shadow(0 0 10px #00f)
+            drop-shadow(0 0 20px #00f)
+            drop-shadow(0 0 30px #00f);
+}
