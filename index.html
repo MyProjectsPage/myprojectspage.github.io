@@ -134,31 +134,87 @@
                             style="background-image:url(images/chadee.png); background-size:75%; background-repeat:no-repeat; background-position:center 10%;">
                             <div class="overlay"></div>
                         </div>
-                        <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-                            <!-- Top Row Buttons -->
-                            <div style="display: flex; gap: 10px;">
-                                <a href="images/Resume.pdf" class="btn btn-primary py-3 px-4">Resume</a>
-                                <a href="https://www.linkedin.com/in/chadee"
-                                    class="btn d-inline-flex justify-content-center align-items-center py-3 px-4"
-                                    target="_blank"
-                                    style="background-color:#0077B5; border-color:#0077B5; color:white;">
-                                    <i class="fab fa-linkedin me-2"></i> LinkedIn
-                                </a>
-                                <a href="https://github.com/MyProjectsPage"
-                                    class="btn d-inline-flex justify-content-center align-items-center py-3 px-4"
-                                    target="_blank"
-                                    style="background-color:#24292e; border-color:#24292e; color:white;">
-                                    <i class="fab fa-github me-2"></i> GitHub
-                                </a>
+                        <div class="one-forth d-flex  align-items-center ftco-animate"
+                            data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>Chadee Fouad</span></h1>
+                                <!-- Element to contain animated typing -->
+                                <span class="subheading text-green">I lead teams to bridge the gap between the business
+                                    world and the IT world.</span>
+                                <br>
+                                <span class="subheading text-white">Areas of expertise include:</span>
+                                <br>
+                                <span id="typing-animation"></span>
+                                <script>
+                                    // Initialize the typing animation
+                                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                                    // Create an array of typing text
+                                    const typingTexts = [
+                                        'Software Engineering',
+                                        'Business Intelligence',
+                                        'Data Science',
+                                        'Analytics',
+                                        'Digital Transformation',
+                                        'Business & IT Strategy',
+                                        'Financial Planning & Analysis',
+                                        'Team Leadership',
+
+                                    ];
+
+                                    // Create a function to display the typing animation for a given text
+                                    function playTypingAnimation(text) {
+                                        // Loop through each character and add it to the element
+                                        for (let i = 0; i < text.length; i++) {
+                                            setTimeout(() => {
+                                                typingAnimationElement.textContent += text[i];
+                                            }, i * 200); // Increase the delay to slow down the typing animation
+                                        }
+
+                                        // Once the animation is complete, reset the text and start over
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent = '';
+                                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) %
+                                                typingTexts.length]);
+                                        }, text.length * 200);
+                                    }
+
+                                    // Start the typing animation loop
+                                    playTypingAnimation(typingTexts[0]);
+                                </script>
+                                <br>
+                                <br>
+                                <p>
+                                    <!-- Resume Button -->
+                                    <a href="images/Resume.pdf" class="btn btn-primary py-3 px-4">Resume</a>
+
+                                    <!-- LinkedIn Button -->
+                                    <a href="https://www.linkedin.com/in/chadee"
+                                        class="btn d-inline-flex justify-content-center align-items-center py-3 px-4"
+                                        target="_blank"
+                                        style="background-color:#0077B5; border-color:#0077B5; color:white;">
+                                        <i class="fab fa-linkedin me-2"></i> LinkedIn
+                                    </a>
+
+                                    <!-- GitHub Button -->
+                                    <a href="https://github.com/MyProjectsPage"
+                                        class="btn d-inline-flex justify-content-center align-items-center py-3 px-4"
+                                        target="_blank"
+                                        style="background-color:#24292e; border-color:#24292e; color:white;">
+                                        <i class="fab fa-github me-2"></i> GitHub
+                                    </a>
+                                </p>
+                                <div style="display: flex; justify-content: center;">
+                                    <!-- Spotlight Feature Button -->
+                                    <a href="https://www.linkedin.com/in/chadee/overlay/1613366395989/single-media-viewer?type=IMAGE&profileId=ACoAAAivLaoBV1K6R3HFPnWjxdy-7tKQRWc5w3E&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BeEsoxikVQaypY%2BeZUBewbA%3D%3D"
+                                        class="btn btn-outline-light py-3 px-4" target="_blank">
+                                        Spotlight Feature
+                                    </a>
+                                </div>
+
                             </div>
-
-                            <!-- Spotlight Feature Button -->
-                            <a href="https://www.linkedin.com/in/chadee/overlay/1613366395989/single-media-viewer?type=IMAGE&profileId=ACoAAAivLaoBV1K6R3HFPnWjxdy-7tKQRWc5w3E&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BeEsoxikVQaypY%2BeZUBewbA%3D%3D"
-                                class="btn btn-outline-light py-3 px-4" target="_blank">
-                                Spotlight Feature
-                            </a>
                         </div>
-
                     </div>
                 </div>
             </div>
