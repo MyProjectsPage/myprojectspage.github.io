@@ -1,94 +1,815 @@
-<section class="ftco-section" id="project-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Projects</h1>
-                <h2 class="mb-4">Projects</h2>
-                <br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chadee's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /*======================================
+         //--//-->   ABOUT
+         ======================================*/
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
+
+        .about-mf .about-img img {
+            margin-left: 10px;
+        }
+
+        .skill-mf .progress {
+            /* background-color: #cde1f8; */
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
+
+        .skill-mf .progress .progress-bar {
+            height: .7rem;
+            background-color: #ffbd39;
+        }
+
+        /* Animation styles */
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+
+        #typing-animation:before {
+            content: "";
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #ccc;
+            animation: typing-cursor 0.5s ease-in-out infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes typing-cursor {
+            from {
+                width: 5px;
+            }
+
+            to {
+                width: 0;
+            }
+        }
+
+        /* project image zoom effect */
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+
+        .zoom-effect:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-image: url('images/pattern.png'); background-repeat: no-repeat; background-size: 100%;
+             background-position: top;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Chadee Fouad</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#my-story-section" class="nav-link"><span>My Story</span></a></li>
+                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
+                    <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+                    <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home-section" class="hero">
+        <div class="home-slider  owl-carousel">
+            <div class="slider-item ">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+                        data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img"
+                            style="background-image:url(images/chadee.png); background-size:75%; background-repeat:no-repeat; background-position:center 10%;">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex  align-items-center ftco-animate"
+                            data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>Chadee Fouad</span></h1>
+                                <!-- Element to contain animated typing -->
+                                <span class="subheading text-green">I lead teams to bridge the gap between the business
+                                    world and the IT world.</span>
+                                <br>
+                                <span class="subheading text-white">Areas of expertise include:</span>
+                                <br>
+                                <span id="typing-animation"></span>
+                                <script>
+                                    // Initialize the typing animation
+                                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                                    // Create an array of typing text
+                                    const typingTexts = [
+                                        'Software Engineering',
+                                        'Business Intelligence',
+                                        'Data Science',
+                                        'Analytics',
+                                        'Digital Transformation',
+                                        'Business & IT Strategy',
+                                        'Financial Planning & Analysis',
+                                        'Team Leadership',
+
+                                    ];
+
+                                    // Create a function to display the typing animation for a given text
+                                    function playTypingAnimation(text) {
+                                        // Loop through each character and add it to the element
+                                        for (let i = 0; i < text.length; i++) {
+                                            setTimeout(() => {
+                                                typingAnimationElement.textContent += text[i];
+                                            }, i * 200); // Increase the delay to slow down the typing animation
+                                        }
+
+                                        // Once the animation is complete, reset the text and start over
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent = '';
+                                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) %
+                                                typingTexts.length]);
+                                        }, text.length * 200);
+                                    }
+
+                                    // Start the typing animation loop
+                                    playTypingAnimation(typingTexts[0]);
+                                </script>
+                                <br>
+                                <br>
+
+                                <p>
+                                    <!-- Resume Button -->
+                                    <a href="images/Resume.pdf" class="btn btn-primary py-3 px-4"
+                                        target="_blank">Resume</a>
+
+                                    <!-- LinkedIn Button -->
+                                    <a href="https://www.linkedin.com/in/chadee"
+                                        class="btn d-inline-flex justify-content-center align-items-center py-3 px-4"
+                                        target="_blank"
+                                        style="background-color:#0077B5; border-color:#0077B5; color:white;">
+                                        <i class="fab fa-linkedin me-2"></i> LinkedIn
+                                    </a>
+
+                                    <!-- GitHub Button -->
+                                    <a href="https://github.com/MyProjectsPage"
+                                        class="btn d-inline-flex justify-content-center align-items-center py-3 px-4"
+                                        target="_blank"
+                                        style="background-color:#24292e; border-color:#24292e; color:white;">
+                                        <i class="fab fa-github me-2"></i> GitHub
+                                    </a>
+
+                                </p>
+                                <p>
+
+                                    <!-- Stack Overflow Button -->
+                                    <a href="https://stackoverflow.com/users/6548223/chadee-fouad"
+                                        class="btn d-inline-flex justify-content-center align-items-center py-3 px-4"
+                                        target="_blank"
+                                        style="background-color:#f48024; border-color:#f48024; color:white;">
+                                        <i class="fab fa-stack-overflow me-2"></i> Stack Overflow
+                                    </a>
+
+                                    <!-- Spotlight Feature Button -->
+                                    <a href="https://www.linkedin.com/in/chadee/overlay/1613366395989/single-media-viewer?type=IMAGE&profileId=ACoAAAivLaoBV1K6R3HFPnWjxdy-7tKQRWc5w3E&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BeEsoxikVQaypY%2BeZUBewbA%3D%3D"
+                                        class="btn btn-outline-light py-3 px-4" target="_blank">
+                                        Spotlight
+                                    </a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Column for text content (now on the left) -->
+                <div class="col-md-7 col-lg-8 pl-lg-5 pb-5 d-flex flex-column justify-content-center">
+                    <!-- Heading and Description -->
+                    <div class="heading-section ftco-animate">
+                        <h1 class="big">About Me</h1>
+                        <h2 class="mb-4">About Me</h2>
+                        <p></p>
+                        <p>I'm a business and IT leader with global experience working for Fortune 500 multinationals
+                            across 3 continents. I bring a rare blend of business acumen and deep technical fluency,
+                            with cross-functional expertise bridging finance, data analytics, and software engineering.
+                            I have a proven track record of building high-performance teams, leading enterprise-wide
+                            automation/AI/ML initiatives, and influencing C-level strategy.</p>
+                        <p>At my latest role with Nestlé Canada, I initially inherited and successfully revitalized the
+                            struggling Analytics & Business Intelligence team, leading a major turnaround in
+                            performance, customer satisfaction, and infrastructure modernization. Building on that
+                            success, I later founded and led the Digital Transformation (Software Engineering) team,
+                            driving the company’s shift toward a tech-centric model. I developed in-house cloud and
+                            web-based solutions that outperformed external vendors, advised the C-Suite on IT strategy,
+                            and contributed to significant gains in efficiency, agility, and data-driven decision-making
+                            — earning multiple corporate awards along the way.</p>
+                        <p>As I look ahead in my career, I’m increasingly inspired to help businesses reimagine their
+                            strategies through the lens of technology. At the same time, I’m equally passionate about
+                            leading others and supporting them in achieving their own dreams and aspirations. </p>
+                    </div>
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/chadee"
+                        class="btn d-flex justify-content-center align-items-center py-3 px-4" target="_blank"
+                        style="background-color:#0077B5; border-color:#0077B5; color:white; text-align:center;">
+                        <i class="fab fa-linkedin me-2"></i> LinkedIn
+                    </a>
+
+                </div>
+                <!-- Column for image (now on the right) -->
+                <div class="col-md-5 col-lg-4 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="about-img">
+                            <img src="images/xerox3.jpg" class="img-fluid rounded b-shadow-a" alt="Commodore computer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="my-story-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Column for images -->
+                <div class="col-md-5 col-lg-4 d-flex flex-column">
+                    <!-- First image -->
+                    <div class="img-about img d-flex align-items-stretch mb-5">
+                        <div class="overlay"></div>
+                        <div class="about-img mt-5">
+                            <img src="images/commodore.png" class="img-fluid rounded b-shadow-a"
+                                alt="Commodore computer">
+                        </div>
+                    </div>
+                    <!-- Second image -->
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="about-img">
+                            <img src="images/soccer.png" class="img-fluid rounded b-shadow-a" alt="Soccer image">
+                        </div>
+                    </div>
+                </div>
+                <!-- Column for text content -->
+                <div class="col-md-7 col-lg-8 pl-lg-5 pb-5 d-flex flex-column justify-content-center">
+                    <div class="heading-section ftco-animate">
+                        <h1 class="big">My Story</h1>
+                        <h2 class="mb-4">My Story</h2>
+                        <p>When I was around 12 years old, my dad noticed how curious I was about electronics, so he
+                            surprised me with a personal computer. Back then, it was the very early days of home
+                            computing, and I was instantly hooked. I didn’t just want to use the computer — I wanted to
+                            understand it, to build games of my own. That curiosity pulled me into the world of
+                            programming and software engineering. I spent endless hours experimenting, learning
+                            efficient design, logic, critical thinking, how to debug and solve problems, spot patterns,
+                            and think in a systematic way. Those skills among many other would later prove to be super
+                            useful in my professional career.</p>
+                        <p>At the same time, I was also inspired by my older brother, a highly successful CFO, whose
+                            world of finance and strategy fascinated me. That influence led me to business school, where
+                            I dove into the business world with energy and ambition. But soon after graduating, I found
+                            myself buried in data and repetitive manual tasks. That’s when it clicked — I could go back
+                            to my programming roots and use those skills to automate the boring stuff and make work more
+                            efficient.</p>
+                        <p>My colleagues quickly recognized my capabilities, and over the years, more and more of them
+                            began reaching out to me for help with their digital challenges. This gave me a unique,
+                            cross-functional view of the strategic inner workings of the corporation and the common
+                            issues, challenges, and painpoints shared by most business people. For me that was a
+                            fantatstic opportunity to learn. I wasn’t just solving problems for myself—I was supporting
+                            teams across multiple departments. That experience taught me how to collaborate effectively,
+                            navigate corporate dynamics, and work with diverse stakeholders. It also motivated me to
+                            live up to my growing reputation, which became a strong incentive to dive deep into
+                            technical R&D. As a result, I gained extensive strategic, business, technical, and
+                            interpersonal hands-on experience through self-driven exploration, trial and error, and
+                            practical problem-solving.</p>
+                        <p>One day, after I built a particularly effective automation tool at work that saved enormous
+                            time, my boss pulled me aside and said, “You’re clearly very talented at this — and even
+                            more importantly, you seem to be very passionate about it. Why not make this your new
+                            career?” That simple comment stuck with me. It gave me the encouragement I needed to take
+                            what I had always considered a side passion and turn it into something more.</p>
+                        <p>I decided to take a leap of faith and leave behind a very sucessful career in Financial
+                            Planning and Analysis (FP&A) to pursue a career change to Data Science, Software
+                            Engineering, and Analytics — and that’s when I enrolled at the University of Toronto to
+                            formally pursue my dream. While studying there, I was fortunate to be noticed by one of my
+                            professors, who also worked in the corporate world. He saw my potential and invited me to
+                            join his team to work on real-world data science projects in the telecommunications
+                            industry. That opportunity gave me the hands-on experience I needed and ultimately
+                            kickstarted my new career in technology! :-)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Experience</h1>
+                    <h2 class="mb-4">Experience</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- <h1 class="big-4">Experience</h1> -->
                 <div class="underline"></div>
             </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2022 – 2024</span>
+                        <h2>HEAD OF SOFTWARE ENGINEERING & DATA SCIENCE</h2>
+                        <span class="position">NESTLE CANADA</span>
+                        <p class="mt-4">
+                            <span>Directed end-to-end delivery of custom software, web applications, and AI/ML/Data
+                                Science automation solutions to optimize business operations, while outperforming
+                                vendors in agility, capabilities, and cost.</span>
+                        <ul>
+                            <li>Persuaded C-Suite to build the team with a strategic vision and solid business case,
+                                secured budget, led hiring.
+                            <li>Won CFO award in 2023 and got ‘Exceptional’ year-end appraisal. Promoted in 2024 for my
+                                initiative.</li>
+                            <li>Business and IT Strategy Consultant proposing data driven solutions based on deep
+                                analysis of issues.</li>
+                            <li>Change Agent delivering agility and lower costs via process reengineering and replacing
+                                legacy systems.</li>
+                            <li>Technical Program Manager (TPM) owning projects from concept to launch, managing:
+                                stakeholders, scope, phases, priorities, communication, vendors, team culture, sprints,
+                                design, DevOps, code reviews, coaching.</li>
+                            <li>Demonstrated technical leadership via teaching my engineers code to address problems
+                                they couldn’t solve.</li>
+                            <li>Tech: Python, JS, C#, API, VBA, PowerApps, Jupyter, Pandas, Docker, HTML/CSS, Streamlit,
+                                React, Dash, GitHub…</li>
+                            <li>Direct report to VP, IT Executive Committee member, Global IT Strategy Partner, trusted
+                                C-level Advisor.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2020 – 2024</span>
+                        <h2>HEAD OF ANALYTICS & BUSINESS INTELLIGENCE (BI)</h2>
+                        <span class="position">NESTLE CANADA</span>
+                        <p class="mt-4">
+                            <span>Led a decision support team of data visualization specialists, BI experts, and data
+                                engineers that developed powerful solutions using Power
+                                BI/Tableau/QLIK/Snowflake/Databricks/SQL /Python/Azure for data mining and uncovering
+                                valuable insights and patterns from big data. Our dashboards freed up time for strategic
+                                analysis and empowered users to cut through complexity, present findings, and take
+                                optimal agile data-driven decisions.</span>
+                        <ul>
+                            <li>Led ‘year of efficiency’ turnaround plan to eliminate inherited backlog due to 70% team
+                                attrition (COVID).</li>
+                            <li>Engaged leaders to standardize backend models across 9 business units, reducing workload
+                                by 90%.</li>
+                            <li>Eliminated ETL pipeline bottlenecks via backend redesign, reducing PBI latency/query
+                                from 5 min to 1 sec.</li>
+                            <li>Led complex data engineering projects to transform and migrate local data to cloud/Azure
+                                ahead of plan.</li>
+                            <li>Out delivered my 3 predecessors combined, won awards, and exceeded expectations in 2021,
+                                2022.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-wrap ftco-animate">
+                            <span class="date">2019 – 2020</span>
+                            <h2>SENIOR DATA SCIENTIST, SUPPLY CHAIN</h2>
+                            <span class="position">TELUS TELECOM</span>
+                            <p class="mt-4">
+                                <span>Led Data Science projects to optimize supply chain costs across $8 Billion spend
+                                    base, with special focus on language models (NLP/LLMs). Used advanced DevOps and
+                                    GenAI tools like Python, JavaScript, SQL, NoSQL, spaCy, FuzzyWuzzy, PANDAS, NumPy,
+                                    RegEx, Scikit-learn, tokenization, lemmatization, TF-IDF to clean, normalize,
+                                    transform, and link millions of unstructured, fragmented, and inconsistent data with
+                                    errors/typos.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-wrap ftco-animate">
+                            <span class="date">2016 – 2017</span>
+                            <h2>SENIOR MANAGER, COMMERCIAL RFPS</h2>
+                            <span class="position">XEROX CANADA</span>
+                            <p class="mt-4">
+                            <ul>
+                                <li>Owned 12 RFPs worth $26M covering hardware, software, labor, SAAS, maintenance,
+                                    services.</li>
+                                <li>Led RFP team, analytics, strategy, deal structure, FP&A, prices, negotiation,
+                                    contracts, supply chain.</li>
+                                <li>Promoted in 2017 after building a game-changer JavaScript/SQL app to statistically
+                                    model nonlinear cost curves. </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-wrap ftco-animate">
+                            <span class="date">2011 – 2015</span>
+                            <h2>HEAD OF FINANCIAL PLANNING & CORPORATE STRATEGY </h2>
+                            <span class="position">FREEDOM MOBILE</span>
+                            <p class="mt-4">
+                                <span>Senior C-Suite advisor involved in all major financial, commercial, and strategic
+                                    decisions. Led FP&A cycle across the entire organization from consolidating raw
+                                    data, building digital infrastructure (data pipelines, databases, and bottom-up
+                                    models), to shaping strategy and orchestrating execution. Developed dashboards,
+                                    business cases, and presentations to support decisions at the highest level.
+                                    Translated strategy into operational goals, led cross functional teams, and
+                                    monitored performance. Oversaw budgets, multi-year plans, and forecasts. Core
+                                    contributor to a $700M merger, a $300M acquisition, and 1 of 3 official bidders for
+                                    700 MHz auction.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="resume-wrap ftco-animate">
+                            <span class="date">PRE 2011</span>
+                            <h2>DATA ANALYST</h2>
+                            <span class="position">SEVERAL MULTINATIONALS</span>
+                            <p class="mt-4">
+                                <span>Junior FP&A Data Analytst roles at Dell, Singapore Telecom, Vodafone Australia,
+                                    France Telecom.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="ftco-about img ftco-section ftco-no-pb" id="education-section">
+                <div class="container">
+                    <div class="row justify-content-center pb-5">
+                        <div class="col-md-10 heading-section text-center ftco-animate">
+                            <h1 class="big big-2">Education</h1>
+                            <h2 class="mb-4">Education</h2>
+                            <br>
+                            <div class="underline"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row" style="display: flex;">
+                        <div class="col-md-6 d-flex">
+                            <div class="resume-wrap ftco-animate flex-fill">
+                                <!-- <span class="date">Expected Graduation: Jun 2024</span> -->
+                                <h2>Master's Degree</h2>
+                                <span class="position">Georgia State University, Atlanta, Georgia, USA</span>
+                                <p class="mt-4">GPA: 3.67/4.00</p>
+                                <p>Majors: 1- Finance 2- Computer Science</p>
+                                <p>Selected from within hundreds of candidates for a fully funded 2 years scholdarship
+                                    to study in the USA. This scholdarship was not an ordinary scholarship. It covered
+                                    turition, cost of living, and even airline tickets. This allowerd me to be fully
+                                    immersed and fully focused on my studies and to get the best out of this experience.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="resume-wrap ftco-animate flex-fill">
+                                <!-- <span class="date">2015-2019</span> -->
+                                <h2>Data Science Program</h2>
+                                <span class="position">The University of Toronto</span>
+                                <p class="mt-4">Module 1 (Grade: Excellent): Coding, Data Structures, Algorithms.</p>
+                                <p class="mt-4">Module 2 (Grade: Excellent): AI, Machine Learning, and Statistics.</p>
+                                <p class="mt-4">Module 3 (Grade: Excellent): Analytics and Data Visualization.</p>
+                                <p class="mt-4">Module 4 (Grade: Excellent): Databases and Big Data Mining.</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- <section>
+            <div class="row">
+              <h1 class="big-4">Leadership</h1>
+              <div class="underline"></div>
+            </div>
+            <br>
+            
+            
+            <div class="row" style="display: flex;">
+            	<div class="col-md-6 d-flex">
+            	  <div class="resume-wrap ftco-animate flex-fill">
+            		<span class="date">Dec 2023 – Present</span>
+            		<h2>Dean’s Student Ambassador</h2>
+            		<span class="position">Northeastern University Bay Area</span>
+            		<p class="mt-4">Continuing to represent the student body in university events, focusing on enhancing communication and engagement across the campus.</p>
+            	  </div>
+            	</div>
+              
+            	<div class="col-md-6 d-flex">
+            		<div class="resume-wrap ftco-animate flex-fill">
+            		  <span class="date">Apr 2023 – Dec 2023</span>
+            		  <h2>Student Ambassador</h2>
+            		  <span class="position">Northeastern University Bay Area</span>
+            		  <p class="mt-4">
+            			<ul>
+            			  <li>Served as the voice of the students, representing their concerns and feedback to relevant stakeholders within the institution, thereby enhancing the overall student experience.</li>
+            			  <li>Organized co-curricular programs, workshops, and cultural events, promoting campus resources, fostering a sense of community, inclusivity, and engagement among students.</li>
+            			</ul>
+            		  </p>
+            		</div>
+            	  </div>
+            	  
+            
+              <section>
+            	<div class="row" style="display: flex;">
+            		<div class="col-md-6 d-flex">
+            			<div class="resume-wrap ftco-animate flex-fill">
+            				<span class="date">May 2023 – May 2024</span>
+            				<h2>Vice President – Adobe Club</h2>
+            				<span class="position">Northeastern University</span>
+            				<ul class="mt-4">
+            					<li>Founded the club at the Silicon Valley campus, playing a pivotal role in establishing its presence within the community.
+            					<li>Led initiatives to foster a vibrant club culture through skill development workshops focused on Adobe products, contributing to the club's growth								</ul>
+            			</div>
+            		</div>
+            
+            		<div class="col-md-6 d-flex">
+            			<div class="resume-wrap ftco-animate flex-fill">
+            				<span class="date">Jan 2018 – Jun 2019</span>
+            				<h2>Professional Assistant</h2>
+            				<span class="position">Practice School Program, BITS Dubai</span>
+            				<ul class="mt-4">
+            					<li>Cultivated and maintained relationships with employers and industry professionals, identifying internship and job opportunities for students.
+            		     		<li>Guided students with resume building, interview preparation, and professional skill development to enhance their placement prospects</li>
+            				</ul>
+            			</div>
+            		</div>
+            	</div>
+            </section> -->
+
+
+
+
+
+            <section class="ftco-section" id="project-section">
+                <div class="container">
+                    <div class="row justify-content-center mb-5 pb-5">
+                        <div class="col-md-7 heading-section text-center ftco-animate">
+                            <h1 class="big big-2">Projects</h1>
+                            <h2 class="mb-4">Projects</h2>
+                            <br>
+                            <div class="underline"></div>
+                            <!-- <p>Below are the projects on SQL, Python, R, Tableau & ML, offering insights into real-world applications.</p> -->
+                        </div>
+                    </div>
+
+                    <!-- First three projects -->
+                    <div class="row d-flex justify-content-center">
+                        <!-- Attendance App -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end">
+                                <a href="https://attendances-app.streamlit.app/" class="block-20 zoom-effect"
+                                    style="background-image: url('images/attendance-app.png');">
+                                </a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading"><a href="https://attendances-app.streamlit.app/">Attendance
+                                            App<a></h3>
+                                    <p>The purpose of this application is to help payroll accountants at a factory to
+                                        calculate the attendance for workers.</p>
+                                    <p>Currently there are many data quality issues which makes the process quite
+                                        complicated and requires a lot of manual adjustments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Disney (Placeholder for 5th Project) -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end">
+                                <a href="https://image-to-text-app.streamlit.app/" class="block-20 zoom-effect"
+                                    style="background-image: url('images/image-to-text-app.png');">
+                                </a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading"><a href="https://image-to-text-app.streamlit.app/">AI Image to
+                                            Text Application</a></h3>
+                                    <p>This real-world application is designed a factory that receives a single, large
+                                        PDF file from an industrial scanner containing hundreds of scanned delivery
+                                        order images with no searchable text—making it tedious to manually locate a
+                                        specific order. </p>
+                                    <p>The solution automatically splits the PDF into individual pages and uses Pthon
+                                        AI-powered OCR technology to detect the invoice number on each page. It then
+                                        renames the file accordingly based on that number for quick and easy retrieval
+                                        by the warehouse staff.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sixth Project (Kept the same) -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end">
+                                <a href="" class="block-20 zoom-effect"
+                                    style="background-image: url('images/wip.png');">
+                                </a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading"><a href="">Coming Soon!</a></h3>
+                                    <p>Please stay tuned as I add more projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second three projects -->
+                    <div class="row d-flex">
+                        <!-- Titanic -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end">
+                                <a href="https://github.com/MyProjectsPage/Titanic/blob/main/DS%20Assignment%202%20-%20Titanic.ipynb"
+                                    class="block-20 zoom-effect" style="background-image: url('images/titanic.jpg');">
+                                </a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading"><a
+                                            href="https://github.com/MyProjectsPage/Titanic/blob/main/DS%20Assignment%202%20-%20Titanic.ipynb">Titanic
+                                            Disaster</a></h3>
+                                    <p>Data Science project to analyze the Titanic passenger dataset and determine which
+                                        categories of passengers (based on class, gender, age, etc.) had the highest
+                                        likelihood of survival during the disaster. The goal is to extract meaningful,
+                                        data-driven insights using statistical analysis to answer the following question
+                                        "What categories of passengers were most likely to survive the Titanic
+                                        disaster?"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- KNN Machine Learning -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end">
+                                <a href="https://github.com/MyProjectsPage/iris_knn_machine_learning_classification/blob/main/Assignment%204%20-%20Classification.ipynb"
+                                    class="block-20 zoom-effect" style="background-image: url('images/iris.jpg');">
+                                </a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading"><a
+                                            href="https://github.com/nikshiranganathan/Twitter-Sentiment-analysis">KNN
+                                            Machine Learning Algorithm on Iris Flowers Dataset</a></h3>
+                                    <p>Machine Learning Project Using the kNN (k-Nearest Neighbors) algorithm to solve a
+                                        classification problem based on the famous iris machine learning dataset.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Uber Hotel (Airbnb Study) -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry">
+                                <a href="https://github.com/MyProjectsPage/airbnb/tree/main"
+                                    class="block-20 zoom-effect"
+                                    style="background-image: url('images/uber_hotel.png');">
+                                </a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading"><a
+                                            href="https://github.com/MyProjectsPage/airbnb/tree/main">Short-Term Rental
+                                            Market Analytics: A Competitive Analysis for UberHotel</a></h3>
+                                    <p>A data science–driven market study for UberHotels, delivering insights into
+                                        consumer behavior and industry trends, a data-informed pricing guidelines
+                                        manual, and a geographic heat map of Airbnb listings in Toronto to identify
+                                        optimal investment zones.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </section>
+    </section>
+    <div class="ftco-section ftco-hireme img margin-top"
+        style="background-image: url(images/bg_1.jpg); position: relative; z-index: 1;">
+        <div class="row justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+                <h2>More projects on <span>Github</span></h2>
+                <div class="heading">
+                    <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+                    <br>
+                    <!-- Updated GitHub link -->
+                    <p><a href="https://github.com/MyProjectsPage" class="btn btn-primary py-3 px-5">GitHub</a></p>
+                </div>
+            </div>
         </div>
-
-        <!-- First row of projects -->
-        <div class="row d-flex justify-content-center">
-            <!-- Attendance App -->
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="https://attendances-app.streamlit.app/" class="block-20 zoom-effect"
-                        style="background-image: url('images/attendance-app.png');"></a>
-                    <div class="text mt-3 float-right d-block">
-                        <h3 class="heading"><a href="https://attendances-app.streamlit.app/">Attendance App</a></h3>
-                        <p>The purpose of this application is to help payroll accountants at a factory to calculate the attendance for workers.</p>
-                        <p>Currently there are many data quality issues which makes the process quite complicated and requires a lot of manual adjustments.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- AI Image to Text App -->
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="https://image-to-text-app.streamlit.app/" class="block-20 zoom-effect"
-                        style="background-image: url('images/image-to-text-app.png');"></a>
-                    <div class="text mt-3 float-right d-block">
-                        <h3 class="heading"><a href="https://image-to-text-app.streamlit.app/">AI Image to Text Application</a></h3>
-                        <p>This real-world application is designed for a factory that receives a single, large PDF file from an industrial scanner containing hundreds of scanned delivery order images with no searchable text—making it tedious to manually locate a specific order.</p>
-                        <p>The solution automatically splits the PDF into individual pages and uses Python AI-powered OCR technology to detect the invoice number on each page. It then renames the file accordingly for quick retrieval.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Second row of projects -->
-        <div class="row d-flex mt-4">
-            <!-- Titanic -->
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="https://github.com/MyProjectsPage/Titanic/blob/main/DS%20Assignment%202%20-%20Titanic.ipynb" class="block-20 zoom-effect"
-                        style="background-image: url('images/titanic.jpg');"></a>
-                    <div class="text mt-3 float-right d-block">
-                        <h3 class="heading"><a href="https://github.com/MyProjectsPage/Titanic/blob/main/DS%20Assignment%202%20-%20Titanic.ipynb">Titanic Disaster</a></h3>
-                        <p>Data Science project to analyze the Titanic passenger dataset and determine which categories of passengers had the highest likelihood of survival.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- KNN Iris -->
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="https://github.com/nikshiranganathan/Twitter-Sentiment-analysis" class="block-20 zoom-effect"
-                        style="background-image: url('images/iris.jpg');"></a>
-                    <div class="text mt-3 float-right d-block">
-                        <h3 class="heading"><a href="https://github.com/nikshiranganathan/Twitter-Sentiment-analysis">KNN Machine Learning Algorithm on Iris Flowers Dataset</a></h3>
-                        <p>Machine Learning Project Using the kNN (k-Nearest Neighbors) algorithm to solve a classification problem based on the famous iris dataset.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- UberHotel / Airbnb -->
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="https://github.com/MyProjectsPage/airbnb/tree/main" class="block-20 zoom-effect"
-                        style="background-image: url('images/uber_hotel.png');"></a>
-                    <div class="text mt-3 float-right d-block">
-                        <h3 class="heading"><a href="https://github.com/MyProjectsPage/airbnb/tree/main">Short-Term Rental Market Analytics: A Competitive Analysis for UberHotel</a></h3>
-                        <p>A data science–driven market study for UberHotels, delivering insights into consumer behavior and industry trends, pricing guidelines, and a geographic heat map of Airbnb listings in Toronto.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Third row: Coming Soon -->
-        <div class="row d-flex justify-content-center mt-4">
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="" class="block-20 zoom-effect" style="background-image: url('images/wip.png');"></a>
-                    <div class="text mt-3 float-right d-block text-center">
-                        <h3 class="heading"><a href="">Coming Soon!</a></h3>
-                        <p>Please stay tuned as I add more projects.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-</section>
+    </section>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Contact</h1>
+                    <h2 class="mb-4">Contact</h2>
+                    <!-- <p>You can reach me at MyWorkDropBox@gmail.com</p> -->
+                    <a href="mailto:MyWorkDropBox@gmail.com" style="color: #007bff; text-decoration: underline;">
+                        <i class="fas fa-envelope" style="margin-right: 6px;"></i>MyWorkDropBox@gmail.com
+                    </a>
+                </div>
+            </div>
+            <!-- Get in Touch Button -->
+            <div class="row justify-content-center">
+                <div class="col-md-7 text-center">
+                    <!-- <h2>Get in Touch</h2> -->
+                    <a href="http://www.linkedin.com/in/chadee" class="btn btn-primary py-3 px-5">Click Here to To
+                        Connect on LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Acknowledgement: I'd like to give credit to <a href="https://colorlib.com"
+                            target="_blank">Colorlib</a> for their great tools that made this page possible.
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // This script automatically makes all external links open in a new tab for better user experience and security
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("a[href^='http']");
+            const currentHost = location.host;
+
+            links.forEach(link => {
+                const linkHost = new URL(link.href).host;
+                if (linkHost !== currentHost) {
+                    link.setAttribute("target", "_blank");
+                    link.setAttribute("rel", "noopener noreferrer");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
